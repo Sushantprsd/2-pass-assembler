@@ -4,6 +4,9 @@ C++ code for 2 Pass Assembler.
 
 This is a simple C++ code for 2 pass assembler.
 
+
+An assembler is a translator, that translates an assembler program into a conventional machine language program. Basically, the assembler goes through the program one line at a time, and generates machine code for that instruction. Then the assembler procedes to the next instruction. In this way, the entire machine code program is created. For most instructions this process works fine, for example for instructions that only reference registers, the assembler can compute the machine code easily, since the assembler knows where the registers are.
+
 ## Getting Started
 
 Input will be taken from input.txt
