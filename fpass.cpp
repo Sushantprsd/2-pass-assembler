@@ -6,8 +6,8 @@ int main()
 	fstream f1,f2;
 	int current_address,starting_address;
 	string label,opcode,operand;
-	f1.open("input.txt", ios::in);
-	f2.open("SymbolTable.txt", ios::out);
+	f1.open("input.txt", ios::in); // open input.txt in read only mode 
+	f2.open("SymbolTable.txt", ios::out);// open SymbolTable.txt in write only mode
     string str ;
     getline(f1, str) ;
     stringstream ss ;

@@ -31,8 +31,12 @@ opcode.txt contain all the opcodes.
 
 ### Instructions
 
-First run fpass.cpp
+The input must start from a START instruction.With the starting address.
 
+First run fpass.cpp
+```
+It will generate symbol table and also produce output for the symbol table and also give total memory required.
+```
 Than run spass.cpp
 
 spass.cpp will create machine code.
@@ -55,7 +59,6 @@ $ JNZ LOOP
 $ LXI H 0000H
 STORE SHLD 2200H
 $ HLT
-
 ```
 Output
 
@@ -79,7 +82,6 @@ Machine Code
 2117
 2118    00
 2119    76
-
 ```
 
 

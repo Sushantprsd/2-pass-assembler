@@ -46,7 +46,6 @@ int main()
 			stringstream ss ;
 			ss << str ;
 			ss >> temp_address >> temp_label ;
-			// cout<<"=>"<<operand.c_str()<<" = "<<temp_label.c_str()<<" >"<<endl;
 			if(strcmp(operand.c_str(),temp_label.c_str()) == 0 )
 			{
 				flag = true;
@@ -97,29 +96,29 @@ int main()
 			{
 				cout << endl ;
 				// current_address+=1;
-						if(strcmp(opcode.c_str(),"MOV") == 0 
-			||	strcmp(opcode.c_str(),"SUB") == 0 
-			||	strcmp(opcode.c_str(),"ADD") == 0 
-			||	strcmp(opcode.c_str(),"INR") == 0 
-			||	strcmp(opcode.c_str(),"INX") == 0
-			||	strcmp(opcode.c_str(),"DCX") == 0 
-			||	strcmp(opcode.c_str(),"CMP") == 0
-			||	strcmp(opcode.c_str(),"DCR") == 0 )
-		{
-			current_address += 1;
-		}
-		else if(strcmp(opcode.c_str(),"JC") == 0 
-			|| strcmp(opcode.c_str(),"JNZ") == 0 
-			|| strcmp(opcode.c_str(),"JZ") == 0 
-			|| strcmp(opcode.c_str(),"JNC") == 0 
-			|| strcmp(opcode.c_str(),"LXI") == 0 )
-		{
-			current_address+=3;
-		}
-		else 
-		{
-			current_address+=2;
-		}
+				if(strcmp(opcode.c_str(),"MOV") == 0 
+					||	strcmp(opcode.c_str(),"SUB") == 0 
+					||	strcmp(opcode.c_str(),"ADD") == 0 
+					||	strcmp(opcode.c_str(),"INR") == 0 
+					||	strcmp(opcode.c_str(),"INX") == 0
+					||	strcmp(opcode.c_str(),"DCX") == 0 
+					||	strcmp(opcode.c_str(),"CMP") == 0
+					||	strcmp(opcode.c_str(),"DCR") == 0 )
+				{
+					current_address += 1;
+				}
+				else if(strcmp(opcode.c_str(),"JC") == 0 
+					|| strcmp(opcode.c_str(),"JNZ") == 0 
+					|| strcmp(opcode.c_str(),"JZ") == 0 
+					|| strcmp(opcode.c_str(),"JNC") == 0 
+					|| strcmp(opcode.c_str(),"LXI") == 0 )
+				{
+					current_address+=3;
+				}
+				else 
+				{
+					current_address+=2;
+				}
 			}
 			f2.close() ;	
 		}else if ( operand.length() == 5 ) {
@@ -168,14 +167,9 @@ int main()
 			current_address++ ;
 			cout << current_address << "\t" << operand.substr(4, 2) << endl ;
 			current_address++ ;
-		}
-
-		
+		}	
 	}
-	
-    
 	f1.close() ;
-	
     return 0;
 } 
 
