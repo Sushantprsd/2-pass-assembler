@@ -1,0 +1,11 @@
+$ LXI H, 2500H   
+$ MOV A, M         
+$ INX H          
+$ ADD M         
+$ INX H          
+$ MOV M, A      
+$ MVI 00      
+$ ADC A        
+$ INX H          
+$ MOV M, A      
+$ HLT           
