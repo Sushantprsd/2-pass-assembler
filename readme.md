@@ -35,7 +35,9 @@ The input must start from a START instruction.With the starting address.
 
 First run fpass.cpp
 ```
-It will generate symbol table and also produce output for the symbol table and also give total memory required.
+It will generate symbol table and also produce output 
+ 
+the symbol table and also give total memory required.
 ```
 Than run spass.cpp
 
