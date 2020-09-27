@@ -19,9 +19,9 @@ Address should be written after operand separated by space.
 
 Opcode should be written in A,M only this manner.
 
-$ MVI B 32H   //no label at starting so put $
+$ MVI B 32H     //no label at starting so put $
 
-LOOP MOV A,M  //Loop is a label 
+LOOP MOV A,M    //Loop is a label 
 
 
 SymbolTable.txt will store all the symbols with its address created in pass 1(fpass.cpp). 
