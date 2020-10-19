@@ -1,0 +1,39 @@
+$ LXI H, 2501H 
+$ MOV A, M	 
+$ INX H	    
+$ CMP M	    
+$ JNC AHEAD	
+$ MOV A, M	 
+$ STA 2503 H	
+$ LXI H, 2501H 
+$ MOV A, M	 
+$ INX H	    
+$ CMP M	    
+$ JNC AHEAD	
+$ MOV A, M	 
+$ STA 2503 H	
+$ LXI H, 2501H 
+$ MOV A, M	 
+$ INX H	    
+$ CMP M	    
+$ JNC AHEAD	
+$ MOV A, M	 
+$ STA 2503 H	
+$ LXI H, 2501H 
+$ MOV A, M	 
+$ INX H	    
+$ CMP M	    
+$ JNC AHEAD	
+$ MOV A, M	 
+$ STA 2503 H	
+$ LXI H, 2501H 
+$ MOV A, M	 
+$ INX H	    
+$ CMP M	    
+$ JNC AHEAD	
+$ MOV A, M	 
+$ STA 2503 H	 
+$ HLT	       
+
+
+
