@@ -1,39 +1,20 @@
-$ LXI H, 2501H 
-$ MOV A, M	 
-$ INX H	    
-$ CMP M	    
-$ JNC AHEAD	
-$ MOV A, M	 
-$ STA 2503 H	
-$ LXI H, 2501H 
-$ MOV A, M	 
-$ INX H	    
-$ CMP M	    
-$ JNC AHEAD	
-$ MOV A, M	 
-$ STA 2503 H	
-$ LXI H, 2501H 
-$ MOV A, M	 
-$ INX H	    
-$ CMP M	    
-$ JNC AHEAD	
-$ MOV A, M	 
-$ STA 2503 H	
-$ LXI H, 2501H 
-$ MOV A, M	 
-$ INX H	    
-$ CMP M	    
-$ JNC AHEAD	
-$ MOV A, M	 
-$ STA 2503 H	
-$ LXI H, 2501H 
-$ MOV A, M	 
-$ INX H	    
-$ CMP M	    
-$ JNC AHEAD	
-$ MOV A, M	 
-$ STA 2503 H	 
-$ HLT	       
-
-
-
+-	START   1000
+-	LXI 	H,2050H
+-	MOV 	B,M
+-	MOV 	C,M
+-	MVI 	D,0AH
+LOOP	MOV 	A,M
+-	CMP 	B
+-	JC 	MIN
+-	MOV 	B,A
+MIN	CMP	C
+-	JNC 	SKIP
+-	MOV 	C,A
+SKIP	INX 	H
+-	DCR 	D
+-	JNZ 	LOOP
+-	LXI 	H,2060H
+-	MOV 	M,B
+-	INX 	H
+-	MOV 	M,C
+-	HLT	-
