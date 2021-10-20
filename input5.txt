@@ -1,0 +1,5 @@
+move ax,data
+move ds,ax
+move ax.opr1
+move bx,opr2
+add bx,ax
